@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and the software."
+title: "fair-dfl-moo: Fair Decision-Focused Learning for Multi-Objective Optimization"
+version: 0.2.1
+license: MIT
+authors:
+  - family-names: Wang
+    given-names: Yu
+    email: ywang88@stevens.edu
+    affiliation: Stevens Institute of Technology
+  - family-names: Chen
+    given-names: Violet (Xinying)
+    email: vchen3@stevens.edu
+    affiliation: Stevens Institute of Technology
+repository-code: "https://github.com/INFORMSJoC/XXXX.YYYY"
+preferred-citation:
+  type: article
+  title: "End-to-End Fairness Optimization with Fair Decision-Focused Learning"
+  journal: "INFORMS Journal on Computing"
+  year: 2026
+  doi: "10.1287/ijoc.XXXX.YYYY"
+  authors:
+    - family-names: Wang
+      given-names: Yu
+    - family-names: Chen
+      given-names: Violet (Xinying)

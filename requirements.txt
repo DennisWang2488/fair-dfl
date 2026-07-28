@@ -1,0 +1,26 @@
+# Install from the project root:  pip install -r requirements.txt
+# Requires Python >= 3.10.
+#
+# Versions are pinned so the pipeline resolves to one fixed dependency set
+# instead of drifting across releases. The wheel below declares its own
+# dependencies as lower bounds (torch>=2.0, numpy>=1.24, ...); the explicit pins
+# here are what actually determine the installed versions.
+
+# Algorithm package (provides `fair_dfl`), installed FROM SOURCE so the method
+# itself is readable and auditable -- see fair_dfl_moo/.
+./fair_dfl_moo
+
+# Numerical / data stack. NOTE: numpy is held at the 1.x series -- the 2.x ABI
+# break is not compatible with every pinned wheel below.
+torch==2.5.1
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.14.1
+matplotlib==3.9.2
+
+# Conic modeling + the differentiable MD decision layer. The open solvers
+# (SCS/ECOS) are sufficient -- no MOSEK/Gurobi required. cvxpylayers pulls in
+# diffcp/scs, which are left unpinned because they compile from source and the
+# usable build depends on the platform toolchain.
+cvxpy==1.5.3
+cvxpylayers==0.1.9
