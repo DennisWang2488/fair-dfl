@@ -1,7 +1,5 @@
 # End-to-End Fairness Optimization with Fair Decision-Focused Learning
 
-Code and reproduction pipeline for the paper of the same name by Yu Wang and
-Violet (Xinying) Chen, submitted to the *INFORMS Journal on Computing*.
 
 **Fair Decision-Focused Learning (FDFL)** trains predictors end-to-end through an
 α-fair welfare allocation program, so that prediction error, prediction disparity,
